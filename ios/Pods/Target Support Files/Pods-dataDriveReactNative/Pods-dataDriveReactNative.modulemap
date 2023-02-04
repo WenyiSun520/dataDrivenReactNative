@@ -1,0 +1,6 @@
+module Pods_dataDriveReactNative {
+  umbrella header "Pods-dataDriveReactNative-umbrella.h"
+
+  export *
+  module * { export * }
+}
