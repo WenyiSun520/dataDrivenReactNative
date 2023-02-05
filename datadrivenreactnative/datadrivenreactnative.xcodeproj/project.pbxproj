@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184FC77C298F01EA0008A124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC77B298F01EA0008A124 /* AppDelegate.m */; };
+		184FC77F298F01EA0008A124 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC77E298F01EA0008A124 /* SceneDelegate.m */; };
+		184FC782298F01EA0008A124 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC781298F01EA0008A124 /* ViewController.m */; };
+		184FC785298F01EA0008A124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184FC783298F01EA0008A124 /* Main.storyboard */; };
+		184FC787298F01EF0008A124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FC786298F01EF0008A124 /* Assets.xcassets */; };
+		184FC78A298F01EF0008A124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184FC788298F01EF0008A124 /* LaunchScreen.storyboard */; };
+		184FC78D298F01EF0008A124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC78C298F01EF0008A124 /* main.m */; };
+		184FC797298F01F00008A124 /* datadrivenreactnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC796298F01F00008A124 /* datadrivenreactnativeTests.m */; };
+		184FC7A1298F01F00008A124 /* datadrivenreactnativeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC7A0298F01F00008A124 /* datadrivenreactnativeUITests.m */; };
+		184FC7A3298F01F00008A124 /* datadrivenreactnativeUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FC7A2298F01F00008A124 /* datadrivenreactnativeUITestsLaunchTests.m */; };
+		184FC7C2298F047B0008A124 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184FC7BE298F047B0008A124 /* FontAwesome5_Brands.ttf */; };
+		184FC7C3298F047B0008A124 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184FC7BF298F047B0008A124 /* FontAwesome5_Regular.ttf */; };
+		184FC7C4298F047B0008A124 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184FC7C0298F047B0008A124 /* FontAwesome.ttf */; };
+		184FC7C5298F047B0008A124 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184FC7C1298F047B0008A124 /* FontAwesome5_Solid.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		184FC793298F01F00008A124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184FC76F298F01E90008A124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184FC776298F01E90008A124;
+			remoteInfo = datadrivenreactnative;
+		};
+		184FC79D298F01F00008A124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184FC76F298F01E90008A124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184FC776298F01E90008A124;
+			remoteInfo = datadrivenreactnative;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184FC777298F01E90008A124 /* datadrivenreactnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = datadrivenreactnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184FC77A298F01EA0008A124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		184FC77B298F01EA0008A124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		184FC77D298F01EA0008A124 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		184FC77E298F01EA0008A124 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		184FC780298F01EA0008A124 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		184FC781298F01EA0008A124 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		184FC784298F01EA0008A124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184FC786298F01EF0008A124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184FC789298F01EF0008A124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184FC78B298F01EF0008A124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184FC78C298F01EF0008A124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		184FC792298F01F00008A124 /* datadrivenreactnativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = datadrivenreactnativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184FC796298F01F00008A124 /* datadrivenreactnativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = datadrivenreactnativeTests.m; sourceTree = "<group>"; };
+		184FC79C298F01F00008A124 /* datadrivenreactnativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = datadrivenreactnativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184FC7A0298F01F00008A124 /* datadrivenreactnativeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = datadrivenreactnativeUITests.m; sourceTree = "<group>"; };
+		184FC7A2298F01F00008A124 /* datadrivenreactnativeUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = datadrivenreactnativeUITestsLaunchTests.m; sourceTree = "<group>"; };
+		184FC7BE298F047B0008A124 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		184FC7BF298F047B0008A124 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		184FC7C0298F047B0008A124 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		184FC7C1298F047B0008A124 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184FC774298F01E90008A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC78F298F01F00008A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC799298F01F00008A124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184FC76E298F01E90008A124 = {
+			isa = PBXGroup;
+			children = (
+				184FC779298F01E90008A124 /* datadrivenreactnative */,
+				184FC795298F01F00008A124 /* datadrivenreactnativeTests */,
+				184FC79F298F01F00008A124 /* datadrivenreactnativeUITests */,
+				184FC778298F01E90008A124 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		184FC778298F01E90008A124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184FC777298F01E90008A124 /* datadrivenreactnative.app */,
+				184FC792298F01F00008A124 /* datadrivenreactnativeTests.xctest */,
+				184FC79C298F01F00008A124 /* datadrivenreactnativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184FC779298F01E90008A124 /* datadrivenreactnative */ = {
+			isa = PBXGroup;
+			children = (
+				184FC7AF298F020E0008A124 /* New Group */,
+				184FC77A298F01EA0008A124 /* AppDelegate.h */,
+				184FC77B298F01EA0008A124 /* AppDelegate.m */,
+				184FC77D298F01EA0008A124 /* SceneDelegate.h */,
+				184FC77E298F01EA0008A124 /* SceneDelegate.m */,
+				184FC780298F01EA0008A124 /* ViewController.h */,
+				184FC781298F01EA0008A124 /* ViewController.m */,
+				184FC783298F01EA0008A124 /* Main.storyboard */,
+				184FC786298F01EF0008A124 /* Assets.xcassets */,
+				184FC788298F01EF0008A124 /* LaunchScreen.storyboard */,
+				184FC78B298F01EF0008A124 /* Info.plist */,
+				184FC78C298F01EF0008A124 /* main.m */,
+			);
+			path = datadrivenreactnative;
+			sourceTree = "<group>";
+		};
+		184FC795298F01F00008A124 /* datadrivenreactnativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				184FC796298F01F00008A124 /* datadrivenreactnativeTests.m */,
+			);
+			path = datadrivenreactnativeTests;
+			sourceTree = "<group>";
+		};
+		184FC79F298F01F00008A124 /* datadrivenreactnativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				184FC7A0298F01F00008A124 /* datadrivenreactnativeUITests.m */,
+				184FC7A2298F01F00008A124 /* datadrivenreactnativeUITestsLaunchTests.m */,
+			);
+			path = datadrivenreactnativeUITests;
+			sourceTree = "<group>";
+		};
+		184FC7AF298F020E0008A124 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				184FC7C0298F047B0008A124 /* FontAwesome.ttf */,
+				184FC7BE298F047B0008A124 /* FontAwesome5_Brands.ttf */,
+				184FC7BF298F047B0008A124 /* FontAwesome5_Regular.ttf */,
+				184FC7C1298F047B0008A124 /* FontAwesome5_Solid.ttf */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184FC776298F01E90008A124 /* datadrivenreactnative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184FC7A6298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnative" */;
+			buildPhases = (
+				184FC773298F01E90008A124 /* Sources */,
+				184FC774298F01E90008A124 /* Frameworks */,
+				184FC775298F01E90008A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = datadrivenreactnative;
+			productName = datadrivenreactnative;
+			productReference = 184FC777298F01E90008A124 /* datadrivenreactnative.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184FC791298F01F00008A124 /* datadrivenreactnativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184FC7A9298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnativeTests" */;
+			buildPhases = (
+				184FC78E298F01F00008A124 /* Sources */,
+				184FC78F298F01F00008A124 /* Frameworks */,
+				184FC790298F01F00008A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184FC794298F01F00008A124 /* PBXTargetDependency */,
+			);
+			name = datadrivenreactnativeTests;
+			productName = datadrivenreactnativeTests;
+			productReference = 184FC792298F01F00008A124 /* datadrivenreactnativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		184FC79B298F01F00008A124 /* datadrivenreactnativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184FC7AC298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnativeUITests" */;
+			buildPhases = (
+				184FC798298F01F00008A124 /* Sources */,
+				184FC799298F01F00008A124 /* Frameworks */,
+				184FC79A298F01F00008A124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184FC79E298F01F00008A124 /* PBXTargetDependency */,
+			);
+			name = datadrivenreactnativeUITests;
+			productName = datadrivenreactnativeUITests;
+			productReference = 184FC79C298F01F00008A124 /* datadrivenreactnativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		184FC76F298F01E90008A124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					184FC776298F01E90008A124 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					184FC791298F01F00008A124 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 184FC776298F01E90008A124;
+					};
+					184FC79B298F01F00008A124 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 184FC776298F01E90008A124;
+					};
+				};
+			};
+			buildConfigurationList = 184FC772298F01E90008A124 /* Build configuration list for PBXProject "datadrivenreactnative" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 184FC76E298F01E90008A124;
+			productRefGroup = 184FC778298F01E90008A124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184FC776298F01E90008A124 /* datadrivenreactnative */,
+				184FC791298F01F00008A124 /* datadrivenreactnativeTests */,
+				184FC79B298F01F00008A124 /* datadrivenreactnativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184FC775298F01E90008A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184FC7C5298F047B0008A124 /* FontAwesome5_Solid.ttf in Resources */,
+				184FC78A298F01EF0008A124 /* LaunchScreen.storyboard in Resources */,
+				184FC7C2298F047B0008A124 /* FontAwesome5_Brands.ttf in Resources */,
+				184FC7C3298F047B0008A124 /* FontAwesome5_Regular.ttf in Resources */,
+				184FC787298F01EF0008A124 /* Assets.xcassets in Resources */,
+				184FC785298F01EA0008A124 /* Main.storyboard in Resources */,
+				184FC7C4298F047B0008A124 /* FontAwesome.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC790298F01F00008A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC79A298F01F00008A124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184FC773298F01E90008A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184FC782298F01EA0008A124 /* ViewController.m in Sources */,
+				184FC77C298F01EA0008A124 /* AppDelegate.m in Sources */,
+				184FC78D298F01EF0008A124 /* main.m in Sources */,
+				184FC77F298F01EA0008A124 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC78E298F01F00008A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184FC797298F01F00008A124 /* datadrivenreactnativeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FC798298F01F00008A124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184FC7A1298F01F00008A124 /* datadrivenreactnativeUITests.m in Sources */,
+				184FC7A3298F01F00008A124 /* datadrivenreactnativeUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		184FC794298F01F00008A124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184FC776298F01E90008A124 /* datadrivenreactnative */;
+			targetProxy = 184FC793298F01F00008A124 /* PBXContainerItemProxy */;
+		};
+		184FC79E298F01F00008A124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184FC776298F01E90008A124 /* datadrivenreactnative */;
+			targetProxy = 184FC79D298F01F00008A124 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		184FC783298F01EA0008A124 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184FC784298F01EA0008A124 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184FC788298F01EF0008A124 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184FC789298F01EF0008A124 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		184FC7A4298F01F00008A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		184FC7A5298F01F00008A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		184FC7A7298F01F00008A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = datadrivenreactnative/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184FC7A8298F01F00008A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = datadrivenreactnative/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184FC7AA298F01F00008A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/datadrivenreactnative.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/datadrivenreactnative";
+			};
+			name = Debug;
+		};
+		184FC7AB298F01F00008A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/datadrivenreactnative.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/datadrivenreactnative";
+			};
+			name = Release;
+		};
+		184FC7AD298F01F00008A124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = datadrivenreactnative;
+			};
+			name = Debug;
+		};
+		184FC7AE298F01F00008A124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = winnie.datadrivenreactnativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = datadrivenreactnative;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184FC772298F01E90008A124 /* Build configuration list for PBXProject "datadrivenreactnative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184FC7A4298F01F00008A124 /* Debug */,
+				184FC7A5298F01F00008A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184FC7A6298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184FC7A7298F01F00008A124 /* Debug */,
+				184FC7A8298F01F00008A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184FC7A9298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184FC7AA298F01F00008A124 /* Debug */,
+				184FC7AB298F01F00008A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184FC7AC298F01F00008A124 /* Build configuration list for PBXNativeTarget "datadrivenreactnativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184FC7AD298F01F00008A124 /* Debug */,
+				184FC7AE298F01F00008A124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 184FC76F298F01E90008A124 /* Project object */;
+}

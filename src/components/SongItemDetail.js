@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import Icon from "react-native-vector-icons/FontAwesome";
+
 import {
   View,
   Text,
@@ -7,37 +9,80 @@ import {
   Linking,
   Button,
   TouchableOpacity,
-} from 'react-native';
+  PanResponder,
+  Animated,
+  Dimensions,
+} from "react-native";
 
-export const SongItemDetail = props => {
+export const SongItemDetail = (props) => {
   let song = props.detail;
-  console.log('song: ', song);
+  console.log("song: ", song);
+  let songXposition = new Animated.Value(0);
+  const songResponder = PanResponder.create({
+    onStartShouldSetPanResponder: () => true,
+    onPanResponderMove: (event, gesture) => {
+      songXposition.setValue(gesture.dx);
+      // console.log("moving", gesture.dx)
+    },
+    onPanResponderRelease: (event, gesture) => {
+      let width = Dimensions.get("window").width;
+      if(Math.abs(gesture.dx ) > width*0.4){
+        const direction = Math.sign(gesture.dx)
+        // -1:swipe left; 1:swipe right
+        Animated.timing(songXposition, {
+          toValue: direction * width,
+          duration: 250,
+        }).start(()=>handleSwipe());
+      }
+      // console.log("realease")
+    },
+  });
+  const handleSwipe = ()=>{
+    
+  }
   return (
-    <View style={SongItemStyles.item}>
+    <View
+      style={[SongItemStyles.item]}
+      {...songResponder.panHandlers}
+    >
       <TouchableOpacity onPress={props.onBack}>
         <Text style={SongItemStyles.button}>Back to list</Text>
       </TouchableOpacity>
-      <Image
+      <Animated.Image
         source={{
           uri: song.artworkUrl100,
         }}
-        style={SongItemStyles.image}
+        style={[SongItemStyles.image, { left: songXposition }]}
       />
 
       <View>
-        <Text
-          style={SongItemStyles.text}
-          onPress={() => Linking.openURL(song.artistViewUrl)}>
-          Singer: {song.artistName}
+        <Text style={[SongItemStyles.text]}>
+          Artist:
+          <Text
+            style={[SongItemStyles.hyperlink]}
+            onPress={() => Linking.openURL(song.artistViewUrl)}
+          >
+            {song.artistName}
+            <Icon name="external-link" size={15} color="#900" />
+          </Text>
         </Text>
-        <Text
-          style={SongItemStyles.text}
-          onPress={() => Linking.openURL(song.trackViewUrl)}>
-          Belong to Track: {song.trackName}
+        <Text style={[SongItemStyles.text]}>
+          Belong to Track:
+          <Text
+            style={[SongItemStyles.hyperlink]}
+            onPress={() => Linking.openURL(song.trackViewUrl)}
+          >
+            {song.trackName}
+            <Icon name="external-link" size={15} color="#900" />
+          </Text>
         </Text>
-        <Text>Release Date: {song.releaseDate.substring(0, 10)}</Text>
-        <Text>Genre: {song.primaryGenreName}</Text>
-        <Text>
+        <Text style={[SongItemStyles.text]}>
+          Release Date: {song.releaseDate.substring(0, 10)}
+        </Text>
+        <Text style={[SongItemStyles.text]}>
+          Genre: {song.primaryGenreName}
+        </Text>
+        <Text style={[SongItemStyles.text]}>
           Collection Price: {song.collectionPrice}
           {song.currency}
         </Text>
@@ -53,22 +98,28 @@ export const SongItemDetail = props => {
 };
 const SongItemStyles = StyleSheet.create({
   item: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   image: {
-    width: '100%',
+    width: "100%",
     height: 150,
   },
   text: {
-    color: 'black',
+    color: "black",
+    font: 24,
+    marginVertical: 10,
   },
   button: {
-    backgroundColor: '#ddd',
+    backgroundColor: "#ddd",
     borderRadius: 20,
     marginVertical: 10,
     paddingHorizontal: 10,
     paddingVertical: 10,
+  },
+  hyperlink: {
+    textDecorationStyle: "solid",
+    textDecorationLine: "underline",
   },
 });
 export default SongItemDetail;
