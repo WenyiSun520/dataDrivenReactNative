@@ -15,9 +15,14 @@ import {
 } from "react-native";
 
 export const SongItemDetail = (props) => {
+  const [imgIndex, setImgIndex] = useState(0);
   let song = props.detail;
   console.log("song: ", song);
+  let images = [song.artworkUrl100, song.artworkUrl100, song.artworkUrl100];
+
   let songXposition = new Animated.Value(0);
+  const width = Dimensions.get("window").width;
+
   const songResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
     onPanResponderMove: (event, gesture) => {
@@ -25,32 +30,44 @@ export const SongItemDetail = (props) => {
       // console.log("moving", gesture.dx)
     },
     onPanResponderRelease: (event, gesture) => {
-      let width = Dimensions.get("window").width;
-      if(Math.abs(gesture.dx ) > width*0.4){
-        const direction = Math.sign(gesture.dx)
+      if (Math.abs(gesture.dx) > width * 0.4) {
+        const direction = Math.sign(gesture.dx);
         // -1:swipe left; 1:swipe right
         Animated.timing(songXposition, {
           toValue: direction * width,
           duration: 250,
-        }).start(()=>handleSwipe());
+        }).start(() => handleSwipe(-1*direction));
+      }else{
+         Animated.spring(songXposition, {
+           toValue: 0,
+         }).start();
       }
       // console.log("realease")
     },
   });
-  const handleSwipe = ()=>{
-    
-  }
+  const handleSwipe = (indexDireaction) => {
+    if (!images[imgIndex + indexDireaction]) {
+      Animated.spring(songXposition, {
+        toValue: 0,
+      }).start();
+
+      return;
+    }
+    setImg(imgIndex + indexDireaction, () => {
+      songXposition.setValue(width);
+      Animated.spring(songXposition, {
+        toValue: 0,
+      }).start();
+    });
+  };
   return (
-    <View
-      style={[SongItemStyles.item]}
-      {...songResponder.panHandlers}
-    >
+    <View style={[SongItemStyles.item]} {...songResponder.panHandlers}>
       <TouchableOpacity onPress={props.onBack}>
         <Text style={SongItemStyles.button}>Back to list</Text>
       </TouchableOpacity>
       <Animated.Image
         source={{
-          uri: song.artworkUrl100,
+          uri: images[imgIndex],
         }}
         style={[SongItemStyles.image, { left: songXposition }]}
       />
