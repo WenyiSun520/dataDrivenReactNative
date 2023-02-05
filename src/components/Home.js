@@ -17,9 +17,9 @@ export const Home = ({ navigation }) => {
   const springAnimate = (direction = 1) => {
     let width = Dimensions.get("window").width - 150;
     Animated.timing(titleXposition, {
-      toValue: 100 * (width / 2),
+      toValue: 100 * (width / 8),
       duration: 5000,
-      easing: Easing.circle,
+      easing: Easing.ease,
       useNativeDriver: false,
     }).start(({ finished }) => {
       if (finished) {
@@ -28,7 +28,7 @@ export const Home = ({ navigation }) => {
     });
   };
 
-  useEffect(() => springAnimate());
+  useEffect(() => springAnimate(),[]);
 
   return (
     <View style={AppStyle.header}>
