@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 import {
@@ -18,7 +18,7 @@ export const SongItemDetail = (props) => {
   const [imgIndex, setImgIndex] = useState(0);
   let song = props.detail;
   console.log("song: ", song);
-  let images = [song.artworkUrl100, song.artworkUrl100, song.artworkUrl100];
+  let images = [song.artworkUrl100, song.artworkUrl30, song.artworkUrl60];
 
   let songXposition = new Animated.Value(0);
   const width = Dimensions.get("window").width;
@@ -36,11 +36,13 @@ export const SongItemDetail = (props) => {
         Animated.timing(songXposition, {
           toValue: direction * width,
           duration: 250,
-        }).start(() => handleSwipe(-1*direction));
-      }else{
-         Animated.spring(songXposition, {
-           toValue: 0,
-         }).start();
+          useNativeDriver: false,
+        }).start(() => handleSwipe(-1 * direction));
+      } else {
+        Animated.spring(songXposition, {
+          toValue: 0,
+          useNativeDriver: false,
+        }).start();
       }
       // console.log("realease")
     },
@@ -49,16 +51,16 @@ export const SongItemDetail = (props) => {
     if (!images[imgIndex + indexDireaction]) {
       Animated.spring(songXposition, {
         toValue: 0,
+        useNativeDriver: false,
       }).start();
-
       return;
     }
-    setImg(imgIndex + indexDireaction, () => {
-      songXposition.setValue(width);
-      Animated.spring(songXposition, {
-        toValue: 0,
-      }).start();
-    });
+    setImgIndex(imgIndex + indexDireaction);
+    songXposition.setValue(width);
+    Animated.spring(songXposition, {
+      toValue: 0,
+      useNativeDriver: false,
+    }).start();
   };
   return (
     <View style={[SongItemStyles.item]} {...songResponder.panHandlers}>
